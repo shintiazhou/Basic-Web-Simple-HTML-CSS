@@ -7,7 +7,9 @@
 .navbar {
   display: flex;
   justify-content: space-around;
-  max-width: 1220px;
+  background-color: white;
+  margin: auto;
+  max-width: 100%;
   align-items: center;
   padding: 1.4rem;
   position: fixed;
@@ -42,8 +44,8 @@ a img {
 .navbar .navbar-nav a:hover::after {
   transform: scaleX(1);
 }
-.icon a:hover {
-  cursor: pointer;
+.navbar .icon a:hover {
+  opacity: 50%;
 }
 .hero {
   height: 60vh;
