@@ -5,6 +5,45 @@
   font-family: sans-serif;
 }
 .navbar {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1220px;
+  align-items: center;
+  padding: 1.4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+a img {
+  width: 50px;
+  height: 50px;
+}
+.navbar .navbar-nav a {
+  color: #0C359E;
+  display: inline-block;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 100;
+}
+.navbar .navbar-nav a:hover {
+  font-weight: bolder;
+}
+.navbar .navbar-nav a::after {
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #0C359E;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(1);
+}
+.icon a:hover {
+  cursor: pointer;
 }
 .hero {
 }
