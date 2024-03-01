@@ -1,87 +1,220 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic Web : HTML CSS</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav class="navbar">this is navbar</nav>
-    <section class="hero">this is hero section</section>
-    <section id ="news" class="news">
+    <section class="hero">
+      <div class="text-overlay">
+        <h1>
+          <div data-aos="fade-up">Kulit cerah</div>
+          <div data-aos="fade-up" data-aos-delay="100">Tanpa celah</div>
+        </h1>
+        <h2 data-aos="fade-up" data-aos-delay="300">
+          Formula baru tanpa lengket
+        </h2>
+        <p class="text-bg" data-aos="fade-up" data-aos-delay="500">
+          95% purity vitamin C^ dan 8 super foods
+        </p>
+        <small data-aos="fade-up" data-aos-delay="700">
+          *berdasarkan nielsen retail market share, oktober 2021 <br />
+          Uji klinik terhadap 32 subjek, spincontrol asia 2022 <br />
+          vitamin c derivative, sodium ascorbyl phosphate
+        </small>
+      </div>
+    </section>
+    <section id="news" class="news">
       <h2>BERITA & SOROTAN</h2>
       <div class="grid">
         <div class="homepage_teaser">
           <a href="#">
             <div class="homepage_teaser_content">
-              <img src="assets/Website Banner DCRM-800x640.png" alt = "gambar 1"/>
+              <img
+                src="assets/Website Banner DCRM-800x640.png"
+                alt="gambar 1"
+              />
             </div>
             <div class="text">
               <p>LIHAT DI SINI</p>
             </div>
           </a>
-          
         </div>
         <div class="homepage_teaser">
           <a href="#">
             <div class="homepage_teaser_content">
-              <img src="assets/thumbnail2.png" alt = "gambar 2"/>
+              <img src="assets/thumbnail2.png" alt="gambar 2" />
             </div>
             <div class="text">
-              <p>KRIM TABIR SURYA YANG TEPAT<br>BACA LAGI</p>
+              <p>KRIM TABIR SURYA YANG TEPAT<br />BACA LAGI</p>
             </div>
           </a>
-          
         </div>
         <div class="homepage_teaser">
           <a href="#">
             <div class="homepage_teaser_content">
-              <img src="assets/BANNER FOAM.png" alt = "gambar 3"/>
+              <img src="assets/BANNER FOAM.png" alt="gambar 3" />
             </div>
             <div class="text">
-              <p>SPARKLING BRIGHT FACIAL FOAM<br>LIHAT DISINI</p>
+              <p>SPARKLING BRIGHT FACIAL FOAM<br />LIHAT DISINI</p>
             </div>
           </a>
-          
         </div>
         <div class="homepage_teaser">
           <a href="#">
             <div class="homepage_teaser_content">
-              <img src="assets/thumbnail1.png" alt = "gambar 4"/>
-            </div>
-            <div class="text"> 
-              <p>APA TIPE KULIT ANDA?<br> TEMUKAN KEBUTUHAN<br>PERAWATAN TUBUH ANDA</p>
-            </div>
-          </a>
-          
-        </div>
-        <div class="homepage_teaser">
-          <a href="#">
-            <div class="homepage_teaser_content">
-              <img src="assets/niveacrememarketingteaser.jpg" alt = "gambar 5"/>
+              <img src="assets/thumbnail1.png" alt="gambar 4" />
             </div>
             <div class="text">
-              <p>KRIM KAMI<br>CARI TAHU DI SINI</p>
+              <p>
+                APA TIPE KULIT ANDA?<br />
+                TEMUKAN KEBUTUHAN<br />PERAWATAN TUBUH ANDA
+              </p>
             </div>
           </a>
-          
         </div>
         <div class="homepage_teaser">
           <a href="#">
             <div class="homepage_teaser_content">
-              <img src="assets/Untitled-1.png" alt = "gambar 6"/>
+              <img src="assets/niveacrememarketingteaser.jpg" alt="gambar 5" />
             </div>
             <div class="text">
-              <p>INGIN MENGHUBUNGI NIVEA <br>ATAU MEMPUNYAI PERTANYAAN KHUSUS?<br>KONTAK KAMI</p>
+              <p>KRIM KAMI<br />CARI TAHU DI SINI</p>
             </div>
           </a>
-          
         </div>
-        
+        <div class="homepage_teaser">
+          <a href="#">
+            <div class="homepage_teaser_content">
+              <img src="assets/Untitled-1.png" alt="gambar 6" />
+            </div>
+            <div class="text">
+              <p>
+                INGIN MENGHUBUNGI NIVEA <br />ATAU MEMPUNYAI PERTANYAAN
+                KHUSUS?<br />KONTAK KAMI
+              </p>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
     <section class="about">this is about section</section>
-    <footer class="footer">this is footer section</footer>
+    <footer class="footer">
+      <footer
+        style="
+          background-color: #2c3e50;
+          color: #fff;
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <div style="text-align: left; flex: 1">
+          <h3 style="font-size: 18px; margin-bottom: 10px">
+            Informasi Terbaru
+          </h3>
+          <ul style="list-style-type: none; padding: 0">
+            <li style="margin-bottom: 5px">
+              <a
+                href="/tentang-kami/syarat-penggunaan"
+                title="Syarat Penggunaan"
+                style="color: #fff; text-decoration: none"
+                >Syarat Penggunaan</a
+              >
+            </li>
+            <li style="margin-bottom: 5px">
+              <a
+                href="/tentang-kami/kebijakan-privasi"
+                title="Kebijakan Privasi"
+                style="color: #fff; text-decoration: none"
+                >Kebijakan Privasi</a
+              >
+            </li>
+            <li style="margin-bottom: 5px">
+              <a
+                href="/tentang-kami/info-perusahaan"
+                title="Info Perusahaan"
+                style="color: #fff; text-decoration: none"
+                >Info Perusahaan</a
+              >
+            </li>
+            <li style="margin-bottom: 5px">
+              <a
+                href="/tentang-kami/cookies"
+                title="Penggunaan Cookies pada NIVEA.co.id"
+                style="color: #fff; text-decoration: none"
+                >Penggunaan Cookies pada NIVEA.co.id</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div style="text-align: right; flex: 1">
+          <h3 style="font-size: 18px; margin-bottom: 10px">Newsletter Kami</h3>
+          <p style="color: #fff; font-size: 14px; margin-bottom: 10px">
+            Dapatkan berita terbaru, tips perawatan, inspirasi, dan kesempatan
+            untuk mendapatkan produk gratis khusus untuk Anda.
+          </p>
+          <form style="margin-bottom: 10px">
+            <input
+              type="email"
+              placeholder="Masukkan Email"
+              style="padding: 8px; border: 1px solid #fff; border-radius: 5px"
+            />
+            <button
+              style="
+                background-color: #fff;
+                color: #2c3e50;
+                padding: 8px 20px;
+                border: none;
+                border-radius: 5px;
+              "
+            >
+              Berlangganan
+            </button>
+          </form>
+        </div>
+        <div style="text-align: center; flex: 1">
+          <h3 style="font-size: 18px; margin-bottom: 10px">
+            Temukan Kami di Instagram
+          </h3>
+          <a
+            href="https://www.instagram.com/nivea_id/?hl=en"
+            title="Instagram"
+            style="text-decoration: none"
+          >
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="fill: #fff; margin: 10px"
+            >
+              <path
+                d="M12 0C5.371 0 0 5.372 0 12c0 2.74.924 5.276 2.473 7.288A11.98 11.98 0 0012 24c6.629 0 12-5.372 12-12S18.629 0 12 0zM9 4h6c2.21 0 4 1.79 4 4v6c0 2.209-1.79 4-4 4H9c-2.21 0-4-1.791-4-4V8c0-2.21 1.79-4 4-4z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                d="M12 6a6 6 0 100 12 6 6 0 000-12zM8 12a4 4 0 118 0 4 4 0 01-8 0z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              ></path>
+              <circle cx="18.5" cy="5.5" r="1.5"></circle>
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, easing: "ease" });
+    </script>
   </body>
 </html>
