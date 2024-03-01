@@ -4,19 +4,22 @@
   margin: 0;
   font-family: "Poppins", Helvetica, sans-serif;
 }
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  margin: auto;
-  max-width: 100%;
-  align-items: center;
-  padding: 1.4rem;
+.navbar-container {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 9999;
+  max-width: 100%;
+  background-color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1220px;
+  margin: auto;
+  align-items: center;
+  padding: 1.4rem;
 }
 a img {
   width: 50px;
