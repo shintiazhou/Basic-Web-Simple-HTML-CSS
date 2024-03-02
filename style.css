@@ -156,8 +156,73 @@
 .news .grid .homepage_teaser:hover {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 17px;
+  margin: auto;
+  background-color: #ECF2FF;
+  padding: 50px;
+}
 
-.abput {
+#about > div {
+  width: 100%;
+}
+
+.container {
+  text-align: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+#about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* text-align: center; */
+  margin-top: 68px;
+  gap: 8px;
+}
+
+.items {
+  text-align: center;
+  padding: 20px;
+}
+
+.items > div {
+  width: 50px;
+  height: 10px;
+  background-color: #FFC93C;
+  margin-bottom: 17px;
+}
+.items h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #0c359e;
+  position: relative;
+  z-index: 1;
+  color: #0c359e;
+  margin: 0 auto;
+  background-color: white;
+}
+.desc {
+  font-size: 18px;
+}
+.items p {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #0c359e;
+}
+.container h1 {
+  color:#0c359e ;
 }
 
 .footer {
