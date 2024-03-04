@@ -4,6 +4,10 @@
   margin: 0;
   font-family: "Poppins", Helvetica, sans-serif;
 }
+body,
+html {
+  overflow-x: hidden;
+}
 .navbar-container {
   position: fixed;
   top: 0;
@@ -14,6 +18,7 @@
   background-color: white;
 }
 .navbar {
+  height: 40px;
   display: flex;
   justify-content: space-between;
   max-width: 1220px;
@@ -25,9 +30,10 @@
   width: 50px;
   height: 50px;
 }
+
 .navbar .navbar-nav a {
   color: #0c359e;
-  display: inline-block;
+  display: none;
   font-size: 1.1rem;
   text-decoration: none;
   margin: 0 1rem;
@@ -111,7 +117,6 @@
   margin-left: auto;
   margin-right: auto;
   min-width: 320px;
-  padding: 20px;
   width: 100%;
 }
 .news .grid .homepage_teaser {
@@ -120,7 +125,7 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-
+  padding: 10px;
   max-width: 100%;
 }
 .news .grid .homepage_teaser .homepage_teaser_content {
@@ -162,7 +167,7 @@
   justify-content: space-between;
   column-gap: 17px;
   margin: auto;
-  background-color: #ECF2FF;
+  background-color: #ecf2ff;
   padding: 50px;
 }
 
@@ -175,13 +180,12 @@
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px;
+  padding: 10px;
 }
 
 #about-stats {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
   margin-top: 68px;
   gap: 8px;
 }
@@ -194,7 +198,7 @@
 .items > div {
   width: 50px;
   height: 10px;
-  background-color: #FFC93C;
+  background-color: #ffc93c;
   margin-bottom: 17px;
 }
 .items h1 {
@@ -222,10 +226,7 @@
   color: #0c359e;
 }
 .container h1 {
-  color:#0c359e ;
-}
-
-.footer {
+  color: #0c359e;
 }
 
 @media only screen and (min-width: 700px) {
@@ -240,5 +241,11 @@
   }
   .hero .text-overlay .text-bg {
     font-size: 1.5rem;
+  }
+  #about-stats {
+    flex-direction: row;
+  }
+  .navbar .navbar-nav a {
+    display: inline-block;
   }
 }
